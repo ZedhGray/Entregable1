@@ -3,36 +3,40 @@
   padding: 0%;
   box-sizing: border-box;
 }
-body {
+/* body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-}
+} */
 .App {
   height: 100vh;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 .card {
-  width: 600px;
-  height: 200px;
-  overflow: hidden;
+  width: 80vw;;
+  height: 45%;
   display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 10px;
+  /* shadow  */
+
   background-color: white;
   box-shadow: 0px 5px 10px #0005;
   border-radius: 10px;
 }
 .card_quote {
-  font-size: 75px;
+  font-size: 45px;
   background-size: cover;
 }
-.card_container {
+/* .card_container {
   display: grid;
   grid-template-columns: 500px;
   padding: 5px 10px;
   padding-bottom: 20px;
-}
+} */
 
 .card_text {
   font-size: 20px;
@@ -42,12 +46,15 @@ body {
   text-align: right;
 }
 .btn {
+  display: flex;
   text-align: right;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 .card_btn {
   color: white;
   border: 0;
-  width: 50px;
+  width: 30px;
   aspect-ratio: 1;
   font-size: 2rem;
   border-radius: 50%;
